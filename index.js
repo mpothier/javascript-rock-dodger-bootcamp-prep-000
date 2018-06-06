@@ -97,7 +97,7 @@ function moveDodgerRight() {
   var left = positionToInteger(DODGER.style.left)
 
   function step() {
-    DODGER.style.left = `${left + 10}px`
+    DODGER.style.left = `${left + 4}px`
   }
  
   if (left < 360) {
@@ -116,5 +116,5 @@ function start() {
 
   gameInterval = setInterval(function() {
     createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
-  }, 500)
+  }, 1000)
 }
