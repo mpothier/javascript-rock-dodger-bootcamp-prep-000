@@ -54,7 +54,7 @@ function createRock(x) {
       rock.remove()
     } 
   }
-
+  
   moveRock(rock)
   ROCKS.push(rock)
   return rock
