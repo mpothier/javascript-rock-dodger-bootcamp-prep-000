@@ -43,7 +43,7 @@ function createRock(x) {
   GAME.appendChild(rock)
 
   function moveRock() {
-    rock.style.top = `${top += 10}px`
+    rock.style.top = `${top += 8}px`
     if (checkCollision(rock)) {
       endGame()
     }
@@ -116,5 +116,5 @@ function start() {
 
   gameInterval = setInterval(function() {
     createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)))
-  }, 1000)
+  }, 500)
 }
