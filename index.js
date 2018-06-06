@@ -43,7 +43,7 @@ function createRock(x) {
   GAME.appendChild(rock)
 
   function moveRock() {
-    rock.style.top = `${top += 2}px`
+    rock.style.top = `${top += 10}px`
     if (checkCollision(rock)) {
       endGame()
     }
@@ -85,7 +85,7 @@ function moveDodgerLeft() {
   var left = positionToInteger(DODGER.style.left)
 
   function step() {
-    DODGER.style.left = `${left - 4}px`
+    DODGER.style.left = `${left - 10}px`
   }
  
   if (left > 0) {
@@ -97,7 +97,7 @@ function moveDodgerRight() {
   var left = positionToInteger(DODGER.style.left)
 
   function step() {
-    DODGER.style.left = `${left + 4}px`
+    DODGER.style.left = `${left + 10}px`
   }
  
   if (left < 360) {
